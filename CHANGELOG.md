@@ -1,3 +1,9 @@
+## v7.8.6 (2026-10-21)
+
+### Bug Fixes
+
+* fix(deps): bump transitive undici to 6.29.1 for GHSA-rfgv-xxqx-mfg5 (#91) (0389ab786c98553a0bd46baa9603ecf0f16715f3)
+
 ## v7.8.5 (2026-09-17)
 
 ### Miscellaneous Chores
