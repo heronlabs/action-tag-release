@@ -1,3 +1,9 @@
+## v7.8.10 (2026-10-23)
+
+### Miscellaneous Chores
+
+* other(deps-dev): bump dependency-cruiser from 18.6.0 to 18.7.0 (#92) (4ea5199e5976e158b44b47287c58cc971d7de9b3)
+
 ## v7.8.9 (2026-10-21)
 
 ### Miscellaneous Chores
