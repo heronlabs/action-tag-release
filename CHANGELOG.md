@@ -1,3 +1,9 @@
+## v7.8.11 (2026-10-24)
+
+### Miscellaneous Chores
+
+* other: drop -build suffix from repo name references (#93) (a38a2333a781a7fb7db1ef5d6b353c7de02052cd)
+
 ## v7.8.10 (2026-10-23)
 
 ### Miscellaneous Chores
