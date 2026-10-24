@@ -56,7 +56,7 @@ jobs:
 
       - run: git pull --rebase origin main
 
-      - uses: heronlabs/action-tag-release-build@v7
+      - uses: heronlabs/action-tag-release@v7
         id: version
         with:
           ghToken: ${{ secrets.PAT }}
@@ -75,7 +75,7 @@ The `id: version` step exposes the `version`, `tag`, `tagMajor`, `tagMinor`, and
 When `semantic` is omitted the bump is inferred from the HEAD commit.
 
 ```yaml
-- uses: heronlabs/action-tag-release-build@v7
+- uses: heronlabs/action-tag-release@v7
   with:
     ghToken: ${{ secrets.PAT }}
 ```
@@ -83,7 +83,7 @@ When `semantic` is omitted the bump is inferred from the HEAD commit.
 ### With package.json sync
 
 ```yaml
-- uses: heronlabs/action-tag-release-build@v7
+- uses: heronlabs/action-tag-release@v7
   with:
     ghToken: ${{ secrets.PAT }}
     semantic: minor
@@ -95,7 +95,7 @@ Requires `actions/setup-node` before this step.
 ### With Claude Code plugin sync
 
 ```yaml
-- uses: heronlabs/action-tag-release-build@v7
+- uses: heronlabs/action-tag-release@v7
   with:
     ghToken: ${{ secrets.PAT }}
     semantic: minor
@@ -110,7 +110,7 @@ Requires `jq` on the runner (GitHub-hosted runners include it).
 After tagging, the released ref can be cascaded into downstream environment branches.
 
 ```yaml
-- uses: heronlabs/action-tag-release-build@v7
+- uses: heronlabs/action-tag-release@v7
   with:
     ghToken: ${{ secrets.PAT }}
     semantic: minor
@@ -250,8 +250,8 @@ Outputs `version`, `tag`, `tagMajor`, `tagMinor`, and `releasedRefs` are publish
 
 MIT
 
-[ci-badge]: https://github.com/heronlabs/action-tag-release-build/actions/workflows/continuous-integration.yml/badge.svg
-[ci-url]: https://github.com/heronlabs/action-tag-release-build/actions/workflows/continuous-integration.yml
+[ci-badge]: https://github.com/heronlabs/action-tag-release/actions/workflows/continuous-integration.yml/badge.svg
+[ci-url]: https://github.com/heronlabs/action-tag-release/actions/workflows/continuous-integration.yml
 [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: ./LICENSE
 [marketplace-badge]: https://img.shields.io/badge/GitHub-Marketplace-green.svg
